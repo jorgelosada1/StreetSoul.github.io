@@ -1,0 +1,73 @@
+.Carta {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40vh;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+
+    &__carrito {
+        font-size: 10vh;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    &__img {
+        width: 80%;
+        border: solid 2px rgb(159, 150, 150);
+        padding: 20px;
+        border-radius: 16px;
+    }
+    &__titulo {
+        margin-top: 15px;
+        font-size: 4vh;
+    }
+    &__talla {
+        margin-top: 15px;
+        border: solid 2px rgb(159, 150, 150);
+        border-radius: 16px;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30%;
+        font-size: 4vh;
+    }
+    &__precio {
+        margin-top: 15px;
+        font-size: 4vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Cambios para dispositivos móviles */
+    .Carta {
+        padding: 15px; /* Menor espacio interno en la carta */
+        width: 80vw; /* Cambio del ancho de la carta */
+    }
+
+    .Carta__carrito {
+        font-size: 6vh; /* Tamaño de fuente más pequeño para el icono de carrito */
+    }
+
+    .Carta__titulo {
+        font-size: 3vh; /* Tamaño de fuente más pequeño para el título */
+    }
+
+    .Carta__img {
+        width: 60%; /* Reducción del tamaño de la imagen */
+        padding: 10px; /* Menor espacio interno en la imagen */
+    }
+
+    .Carta__talla {
+        font-size: 3vh; /* Tamaño de fuente más pequeño para la talla */
+    }
+
+    .Carta__precio {
+        font-size: 3vh; /* Tamaño de fuente más pequeño para el precio */
+    }
+}

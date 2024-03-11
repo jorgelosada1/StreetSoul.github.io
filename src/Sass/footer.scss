@@ -1,0 +1,105 @@
+.Contenedor {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Contenedor__img {
+    width: 40%;
+}
+
+.Contenedor__contactos {
+    color: white;
+    border-left: solid 1px white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Contenedor__whatsapp,
+.Contenedor__facebook,
+.Contenedor__tiktok,
+.Contenedor__instagram {
+    font-size: 200%;
+    color: white;
+}
+
+.Contenedor__whatsapp:hover {
+    font-size: 270%;
+    color: green;
+    cursor: pointer;
+}
+
+.Contenedor__facebook:hover {
+    font-size: 270%;
+    color: blue;
+    cursor: pointer;
+}
+
+.Contenedor__tiktok:hover,
+.Contenedor__instagram:hover {
+    font-size: 270%;
+    cursor: pointer;
+}
+
+.Contenedor__gmail {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 3vh;
+}
+
+.Contenedor__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Contenedor__izquierda {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Contenedor__titulo {
+    color: white;
+    font-size: 150%;
+}
+
+.Contenedor__titulo:hover {
+    color: rgb(91, 19, 164);
+    font-size: 150%;
+    cursor: pointer;
+}
+
+.Contenedor__año {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .Contenedor__whatsapp,
+    .Contenedor__facebook,
+    .Contenedor__tiktok,
+    .Contenedor__instagram {
+        font-size: 150%;
+    }
+
+    .Contenedor__gmail {
+        font-size: 2vh; 
+    }
+
+    .Contenedor__titulo {
+        font-size: 100%; 
+    }
+
+    .Contenedor__logo {
+        width: 80%; 
+    }
+}

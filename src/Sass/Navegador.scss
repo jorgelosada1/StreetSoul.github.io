@@ -1,0 +1,56 @@
+.Container {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.Container__img {
+    width: 20%;
+}
+
+.Container__sexo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 100%;
+    width: 40%;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.Container__contacto,
+.Container__inicio {
+    border-left: solid 1px rgb(255, 255, 255);
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Container__contacto:hover,
+.Container__inicio:hover {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(99, 94, 94);
+}
+
+@media only screen and (max-width: 768px) {
+    /* Cambios para dispositivos móviles */
+    .Container__sexo {
+        font-size: 20px; /* Tamaño de fuente más pequeño para el texto de género */
+    }
+
+    .Container__contacto,
+    .Container__inicio {
+        height: 60%; /* Reducción de la altura de los botones */
+    }
+}

@@ -1,0 +1,49 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo{
+    padding: 5vh;
+    width: 80%;
+    font-size: 7vh;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+.Cartas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Cartas .Carta {
+    flex-basis: 30%; 
+    margin: 10px; 
+    box-sizing: border-box; 
+    padding: 10px; 
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .titulo {
+        font-size: 4vh; 
+        padding: 2vh;
+    }
+
+    .Cartas .Carta {
+        flex-basis: 45%;
+        margin: 5px; 
+        padding: 5px; 
+    }
+
+    nav {
+        font-size: 80%;
+        
+    }
+}
